@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .centerd{
+        @apply flex flex-col items-center ;
+    }
+    .menu{
+        @apply  flex flex-row items-center gap-4 rounded-lg duration-300 text-dark-gray font-medium hover:bg-blue hover:text-white cursor-pointer py-2 pl-2;
+    }
+    .li-hover{
+        @apply group-hover:fill-white;
+    }
+    .cal{
+        @apply w-full flex items-center justify-center transition-all font-medium duration-300 hover:text-white cursor-pointer h-11 rounded-full;
+    }
+    .cali{
+        @apply w-full text-black/45 flex items-center justify-center transition-all font-medium duration-300 hover:text-white cursor-pointer h-11 rounded-full dark:text-white;
+    }
+}
